@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import '../style/App.css';
 import GoogleMap from 'google-map-react';
-import Marker from 'marker';
-
+import Marker from './marker';
 import {fetchParks} from '../actions/action';
 
 class App extends Component {
@@ -12,7 +11,13 @@ class App extends Component {
     this.fetchJedi();
   }
 
-  fetchJedi() {
+    static defaultProps = {
+        center: [59.938043, 30.337157],
+        zoom: 9,
+        greatPlaceCoords: {lat: 59.724465, lng: 30.080121}
+    };
+
+    fetchJedi() {
     this
       .props
       .dispatch(fetchParks());
@@ -23,14 +28,12 @@ class App extends Component {
     return (
       <div>
         <GoogleMap
-            apiKey="AIzaSyCJhoRj0yRSw5W0tgbfeGS2W6zXbbimbc0">
+            apiKey={YOUR_GOOGLE_MAP_API_KEY}
+            center={this.props.center}
+            zoom={this.props.zoom}>
             {parks.map((park, index) => (
-                <div key={index}>
-                  Park: id: {park.id}
-                  name: {park.name}
-                </div>
+                  <Marker key={index} lat={park.lat} lng={park.lng} name={park.name}/>
             ))}
-          <Marker lat={59.955413} lng={30.337844} src={}/>
         </GoogleMap>
 
       </div>

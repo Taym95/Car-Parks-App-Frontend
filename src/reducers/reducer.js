@@ -2,7 +2,7 @@ import {combineReducers} from 'redux';
 
 function parksReducer(state = [], action) {
   switch (action.type) {
-    case 'FETCH_FINISH':
+    case 'FETCH_PARKS_FINISH':
       return [
         ...action.payload,
         ...state

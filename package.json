@@ -10,8 +10,10 @@
     "google-map-react": "^0.24.0",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
+    "react-addons": "^0.9.1-deprecated",
     "react-dom": "^15.5.4",
     "react-image-component": "^1.0.0",
+    "react-pure-render": "^1.0.2",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0"

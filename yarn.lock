@@ -4301,6 +4301,10 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-addons:
+  version "0.9.1-deprecated"
+  resolved "https://registry.yarnpkg.com/react-addons/-/react-addons-0.9.1-deprecated.tgz#24131877d87076c1288fd2569b4b618614dccaf6"
+
 react-dev-utils@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-0.5.2.tgz#50d0b962d3a94b6c2e8f2011ed6468e4124bc410"
@@ -4330,6 +4334,10 @@ react-image-component:
   resolved "https://registry.yarnpkg.com/react-image-component/-/react-image-component-1.0.0.tgz#4d758468d4a976f5d6ab8cf9bbe8cc369981b8af"
   dependencies:
     react "^0.13.3"
+
+react-pure-render:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-pure-render/-/react-pure-render-1.0.2.tgz#9d8a928c7f2c37513c2d064e57b3e3c356e9fabb"
 
 react-redux:
   version "5.0.4"

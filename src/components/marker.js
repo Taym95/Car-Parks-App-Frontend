@@ -1,12 +1,13 @@
-import React, {PropTypes, Component} from 'react/addons';
+import React, {Component} from 'react';
 
-export default class Marker extends Component {
+export default class MyGreatPlace extends Component {
 
     render() {
         return (
-            <div>
-                <img src=/>
+            <div >
+                {this.props.name}
             </div>
         );
     }
+
 }

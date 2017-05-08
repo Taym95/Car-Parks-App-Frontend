@@ -5,7 +5,7 @@ export function fetchParks() {
     axios
       .get('https://boiling-earth-63862.herokuapp.com/parks.json')
       .then((res) => {
-        dispatch({type: 'FETCH_FINISH', payload: res.data});
+        dispatch({type: 'FETCH_PARKS_FINISH', payload: res.data});
       })
   }
 }
