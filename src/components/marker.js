@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class MyGreatPlace extends Component {
+export default class Marker extends Component {
 
     render() {
         return (
